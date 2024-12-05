@@ -1,21 +1,16 @@
 # Home Assistant Add-on: NGINX Advanced
 
-Sets up an NGINX Server, mostly to be used as a reverse proxy.
+Just like [NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md), but with more power!
 
-Usage:
+![](../pictures/more-power.png)
 
-1. Start addon. Navigate to \<HA IP\>:443 to test if it works. Check Logs if it does not.
-2. Connect to your Home Assistant and edit `/shared/<config_file>`.
-3. Restart Addon.
-4. Rinse and repeat!
+The gist is this: [NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md) comes with a lot of defaults and might not fit your usecase. It is really handy for creating simple setups, but limitations are met rather quickly.
+
+NGINX Advanced's however configuration is based on a single `include /share/nginx_advanced.conf;` directive, which allows you to customize the whole nginx server to your liking.
+
+For usage guide, check [DOCS.md](./DOCS.md).
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
-
-## About
-
-Sets up an advanced NGINX web server. It is typically used to forward SSL internet traffic while allowing unencrypted local traffic to/from a Home Assistant instance.
-
-Make sure you know what you are doing before you start using this addon!
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg

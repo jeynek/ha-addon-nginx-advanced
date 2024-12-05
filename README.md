@@ -1,8 +1,16 @@
-# NGINX Advanced Home Assistant Addon
+# Home Assistant Add-on: NGINX Advanced
 
-Repository for the NGINX Advanced [Home Assistant](https://www.home-assistant.io) Addon
+> Repository for the NGINX Advanced [Home Assistant](https://www.home-assistant.io) Addon
 
-Documentation about Addons: <https://developers.home-assistant.io/docs/add-ons>
+Just like [NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md), but with more power!
+
+![](pictures/more-power.png)
+
+The gist is this: [NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md) comes with a lot of defaults and might not fit your usecase. It is really handy for creating simple setups, but limitations are met rather quickly.
+
+NGINX Advanced's however configuration is based on a single `include /share/nginx_advanced.conf;` directive, which allows you to customize the whole nginx server to your liking.
+
+Documentation about Add-ons: <https://developers.home-assistant.io/docs/add-ons>
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fjanmagnusdev%2Fha-addon-nginx-advanced)
 
@@ -23,7 +31,7 @@ _Repository created with [HA Addon Repository Template](https://github.com/home-
 <!--
 
 Notes to developers after forking or using the github template feature:
-- While developing comment out the 'image' key from 'example/config.yaml' to make the supervisor build the addon
+- While developing comment out the 'image' key from 'example/config.yaml' to make the supervisor build the add-on
   - Remember to put this back when pushing up your changes.
 - When you merge to the 'main' branch of your repository a new build will be triggered.
   - Make sure you adjust the 'version' key in 'example/config.yaml' when you do that.
