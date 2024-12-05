@@ -11,7 +11,7 @@ arch:
   - aarch64
   - amd64
   - i386
-image: janmagnusdev/{arch}-addon-nginx_advanced
+image: ghcr.io/janmagnusdev/{arch}-addon-nginx_advanced
 init: false
 map:
   - ssl
