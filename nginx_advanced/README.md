@@ -1,14 +1,16 @@
 # Home Assistant Add-on: NGINX Home Assistant SSL proxy
 
-Sets up an SSL proxy with NGINX and redirects traffic from port 80 to 443.
+Sets up an SSL proxy with NGINX.
+
+Needs configuration to be edited manually, either in `/share/<config_file>` or `/etc/nginx/<config_file>`.
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
 ## About
 
-Sets up an SSL proxy with NGINX web server. It is typically used to forward SSL internet traffic while allowing unencrypted local traffic to/from a Home Assistant instance.
+Sets up an advanced NGINX web server. It is typically used to forward SSL internet traffic while allowing unencrypted local traffic to/from a Home Assistant instance.
 
-Make sure you have generated a certificate before you start this add-on. The [Duck DNS](https://github.com/home-assistant/hassio-addons/tree/master/duckdns) add-on can generate a Let's Encrypt certificate that can be used by this add-on.
+Make sure you know what you are doing before you start using this addon!
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
