@@ -7,9 +7,14 @@ daemon off;
 pid /var/run/nginx.pid;
 
 {{/*
-    The config file is included from both /etc/nginx/ and /share/.
-    The latter can only be changed by the user directly.
-    Whether the former can be changed during runtime by the user remains open.
+    While use_default is active, the default configuration is included, which might clash with the user configuration.
+    Therefore, it has to be disabled first.
 */}}
-include /etc/nginx/{{ .options.config_file }};
+{{- if .options.use_default }}
+include /etc/nginx/nginx_advanced_default.conf;
+{{- end }}
+
+{{/*
+    The user config file is included from /share/.
+*/}}
 include /share/{{ .options.config_file }};

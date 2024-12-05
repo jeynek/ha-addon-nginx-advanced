@@ -18,8 +18,10 @@ map:
   - share
 options:
   config_file: nginx_advanced.conf
+  use_default: true
 ports:
   443/tcp: 443
   80/tcp: null
 schema:
   config_file: "str"
+  use_default: "bool"
