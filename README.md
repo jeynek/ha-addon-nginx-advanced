@@ -1,6 +1,6 @@
-# janmagnusdev NGINX Advanced Addon
+# NGINX Advanced Home Assistant Addon
 
-NGINX Advanced Addon repository from [janmagnusdev](https://github.com/janmagnusdev/)
+Repository for the NGINX Advanced [Home Assistant](https://www.home-assistant.io) Addon
 
 Documentation about Addons: <https://developers.home-assistant.io/docs/add-ons>
 
