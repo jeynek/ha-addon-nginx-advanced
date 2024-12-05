@@ -1,8 +1,13 @@
-# Home Assistant Add-on: NGINX Home Assistant SSL proxy
+# Home Assistant Add-on: NGINX Advanced
 
-Sets up an SSL proxy with NGINX.
+Sets up an NGINX Server, mostly to be used as a reverse proxy.
 
-Needs configuration to be edited manually, either in `/share/<config_file>` or `/etc/nginx/<config_file>`.
+Usage:
+
+1. Start addon. Navigate to \<HA IP\>:443 to test if it works. Check Logs if it does not.
+2. Connect to your Home Assistant and edit `/shared/<config_file>`.
+3. Restart Addon.
+4. Rinse and repeat!
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
@@ -17,4 +22,3 @@ Make sure you know what you are doing before you start using this addon!
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[discord]: https://discord.gg/c5DvZ4e
