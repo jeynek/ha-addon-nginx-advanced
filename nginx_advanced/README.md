@@ -2,11 +2,11 @@
 
 Just like [NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md), but with more power!
 
-![](../pictures/more-power.png)
+![](pictures/more-power.png)
 
-The gist: [NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md) comes with a lot of defaults and might not fit your usecase. It is really handy for creating simple setups, but limitations are met rather quickly.
+[NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md) comes with a lot of defaults and might not fit your usecase. It is really handy for creating simple setups, but limitations are met rather quickly.
 
-However, NGINX Advanced's configuration is based on a single `include /share/nginx_advanced.conf;` directive, which allows you to customize the whole nginx server configuration to your liking.
+NGINX Advanced's configuration is based on a single `include /share/nginx_advanced.conf;` directive, which allows you to customize the whole nginx server configuration to your liking.
 
 For usage guide, check [DOCS.md](./DOCS.md).
 

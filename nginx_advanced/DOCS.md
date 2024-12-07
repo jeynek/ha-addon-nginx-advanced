@@ -50,11 +50,17 @@ use_default: true
 
 ### Option: `config_file` (required)
 
-The server's fully qualified domain name to use for the proxy.
+The name of the config file that is included under `/share`. E.g., if `config_file=nginx_advanced.conf` (the default), then the file `/share/nginx_advanced.conf` is included by the nginx root configuration named `/etc/nginx/nginx.conf`. Therefore, nginx is configurable by you via changing the `/share/nginx_advanced.conf` file.
+
+Of course, `include` directives also work in this file! This way, you can split up your configuration nicely.
 
 ### Option: `use_default` (required)
 
-The certificate file to use in the `/ssl` directory. Keep filename as-is if you used default settings to create the certificate with the [Duck DNS](https://github.com/home-assistant/addons/tree/master/duckdns) add-on.
+Per default, this option is set to `true`. This way, `/etc/nginx/nginx_advanced_default.conf` is included on starting the addon directly after installation. This configuration sets up a very simple webserver, which serves `/var/www/html/webspace/index.html` when navigating to `http://<HA IP>:80`.
+
+Navigating to that URL can be used for checking whether the Addon installation was successful and nginx was able to start correctly.
+
+IMPORTANT: After modifying `/shared/<config_file>`, you must disable this option. Otherwise, your configuration will probably clash with `/etc/nginx/nginx_advanced_default.conf`, and nginx will produce an error on startup.
 
 ## Troubleshooting
 
