@@ -2,7 +2,7 @@
 
 Just like [NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md), but with more power!
 
-![](pictures/more-power.png)
+![](../pictures/more-power.png)
 
 [NGINX Proxy](https://github.com/home-assistant/addons/blob/master/nginx_proxy/README.md) comes with a lot of defaults and might not fit your usecase. It is really handy for creating simple setups, but limitations are met rather quickly.
 
