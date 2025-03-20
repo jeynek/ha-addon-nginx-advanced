@@ -21,7 +21,8 @@ options:
   use_default: true
 ports:
   443/tcp: 443
-  80/tcp: null
+  8443/tcp: 8443
+  10000/tcp: 10000
 schema:
   config_file: "str"
   use_default: "bool"
