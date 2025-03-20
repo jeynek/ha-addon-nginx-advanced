@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: NGINX Advanced Addon Repository
-url: "https://github.com/janmagnusdev/ha-addon-nginx-advanced"
+url: "https://github.com/jeynek/ha-addon-nginx-advanced"
 maintainer: Jan-Magnus Monenschein <mail@janmagnus.de>
